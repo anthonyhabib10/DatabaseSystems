@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="/static/styles.css">
+  <title>MySQL Select Query</title>
+</head>
+<body>
+<div class="container">
+  <h1>Select Query</h1>
+
+  <form action="/select" method="POST">
+    <select id="query_input" name="content">
+      <option value="">None</option>
+      <option value="SELECT sname,GPA FROM Student WHERE GPA > 4.0">SELECT sname,GPA FROM Student WHERE GPA > 4.0 </option>
+      <option value="SELECT s.sname, p.pname FROM Student s, Undergraduate u, Program p WHERE s.sID=u.sID AND p.pID=u.pID">SELECT s.sname, p.pname FROM Student s, Undergraduate u, Program p WHERE s.sID=u.sID AND p.pID=u.pID</option>
+      <option value="SELECT c.cID, c.cname FROM Student s JOIN enrolled e on s.sID=e.sID JOIN Course c on c.cID=e.cID WHERE s.sname='Richard'">SELECT c.cID, c.cname FROM Student s JOIN enrolled e on s.sID=e.sID JOIN Course c on c.cID=e.cID WHERE s.sname='Richard'</option>
+      <option value="SELECT s.sname, e.grade FROM Student s JOIN enrolled e on s.sID=e.sID JOIN Course c on c.cID=e.cID WHERE e.grade < 50 AND e.cID='3810'">SELECT s.sname, e.grade FROM Student s JOIN enrolled e on s.sID=e.sID JOIN Course c on c.cID=e.cID WHERE e.grade < 50 AND e.cID='INFR3810''</option>
+      <option value="SELECT s.sname, t.room FROM Student s JOIN TA t on s.sID=t.sID JOIN Course c on c.cID=t.cID WHERE cname='Database Systems'">SELECT s.sname, t.room FROM Student s JOIN TA t on s.sID=t.sID JOIN Course c on c.cID=t.cID WHERE cname="Database Systems"</option>
+      <option value="SELECT COUNT(*) as NumCourses FROM Program p JOIN Course c on p.pID=c.pID WHERE p.pname='NITS'">SELECT COUNT(*) as NumCourses FROM Program p JOIN Course c on p.pID=c.pID WHERE p.pname='NITS'</option>
+      <option value="SELECT COUNT(*) as NumStudent FROM Student s, Program p, Undergraduate u WHERE s.sID=u.sID and p.pID=u.pID AND p.pname='NITS'">SELECT COUNT(*) as NumStudent FROM Student s, Program p, Undergraduate u WHERE s.sID=u.sID and p.pID=u.pID AND p.pname='NITS'</option>
+      <option value="SELECT p.pname as Program, COUNT(*) as Num_of_Students FROM Student s, Program p, Undergraduate u WHERE s.sID=u.sID and u.pID=p.PID GROUP by p.pname">SELECT p.pname as Program, COUNT(*) as Num_of_Students FROM Student s, Program p, Undergraduate u WHERE s.sID=u.sID and u.pID=p.PID GROUP by p.pname</option>
+      <option value="SELECT c.cname, AVG(e.grade) FROM Student s JOIN enrolled e on s.sID=e.sID JOIN Course c on e.cID=c.cID GROUP By c.cname">SELECT c.cname, AVG(e.grade) FROM Student s JOIN enrolled e on s.sID=e.sID JOIN Course c on e.cID=c.cID GROUP By c.cname</option>
+      <option value="SELECT c.cname, AVG(e.Grade) FROM Student s JOIN enrolled e on s.sID=e.sID JOIN Course c on e.cID=c.cID Group By c.cname HAVING AVG(grade) < 50">SELECT c.cname, AVG(e.Grade) FROM Student s JOIN enrolled e on s.sID=e.sID JOIN Course c on e.cID=c.cID Group By c.cname HAVING AVG(grade) < 50</option>
+    </select>
+    <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" value="Query Me!" />
+  </form>
+
+
+  {% if table_rows %}
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--4dp">
+      <thead>
+      <tr>
+        {% for name in row_names %}
+          <th class="mdl-data-table__cell--non-numeric">{{ name }}</th>
+        {% endfor %}
+      </tr>
+      </thead>
+      <tbody>
+      {% for row in table_rows %}
+      <tr>
+        {% for entry in row %}
+          <td class="mdl-data-table__cell--non-numeric">{{ entry }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+
+</div>
+
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+</html>

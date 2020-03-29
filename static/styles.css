@@ -1,0 +1,22 @@
+body {
+  font-family: 'Baloo Da 2', sans-serif;
+  font-size: 24px;
+  background: #efe;
+}
+
+h1 {
+  margin-bottom: 36px;
+}
+
+form {
+  margin: 24px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+
