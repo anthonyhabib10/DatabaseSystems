@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c0b5b75-b02f-4447-a38d-3d9a6bee60a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/heroku" afterDir="false" />
-    </list>
+    <list default="true" id="3c0b5b75-b02f-4447-a38d-3d9a6bee60a2" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +31,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
@@ -43,20 +41,6 @@
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/heroku">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" selection-start-column="21" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -227,12 +211,12 @@
       <workItem from="1585433363276" duration="127000" />
       <workItem from="1585433525314" duration="140000" />
       <workItem from="1585437900563" duration="7653000" />
-      <workItem from="1585510179237" duration="367000" />
+      <workItem from="1585510179237" duration="1463000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48343000" />
+    <option name="totallyTimeSpent" value="49439000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -245,9 +229,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4918919" visible="true" weight="0.1375839" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4918919" visible="true" weight="0.1375839" />
       <window_info id="Structure" order="1" sideWeight="0.5081081" side_tool="true" weight="0.062416106" />
       <window_info id="Favorites" order="2" sideWeight="0.5042493" side_tool="true" weight="0.13489933" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -261,7 +244,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.2917847" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3101983" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.4674221" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.62322944" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -275,9 +258,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/template/index.html" />
-    <entry file="file://$PROJECT_DIR$/Excerise 4.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/select.html.py" />
     <entry file="file://$PROJECT_DIR$/select.html" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pip/_vendor/distlib/locators.py">
@@ -308,8 +288,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/Excerise 4.sql">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1315" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heroku">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -318,13 +310,6 @@
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/heroku">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
